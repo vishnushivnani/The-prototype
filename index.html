@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head>
+   
+  
+    <title>The Prototype</title>
+    
+    
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/./p5.play.js"></script>
+    <script src ="form.js"></script>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBe7YmifmzbSk9kbBVJPQ0suJknRaQGzQg",
+    authDomain: "the-prototype-9.firebaseapp.com",
+    projectId: "the-prototype-9",
+    storageBucket: "the-prototype-9.appspot.com",
+    messagingSenderId: "1058290480739",
+    appId: "1:1058290480739:web:e4fb5904906160e074aa56"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  
+  </head>
+  <body>
+    <div class = "container">
+    <div class = "forms-container">
+    <div class="signin-signup">
+    <form action="#" class="signin-form">
+    <h2 class="title">Sign in</h2>
+     <div class="input-field">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder = "Email" id= "Email"/>
+     </div>
+     <div class="input-field">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder = "Password" id = "Password"/>
+     </div>
+  <input type="submit" class="btn solid" value ="Login" id = "log-in-button"/>
+  <p class="social-text">Or Sign in with social platforms</p>
+    <div class="social-media">
+      <a href="#" class="social-icon">
+      <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+            </a>
+         </div>
+            </form>
+            </div>
+            </div>
+         
+    
+    <div class="signup-signup">
+      <form action="#" class="signup-form">
+      <h2 class="title">Sign Up</h2>
+   
+       <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder = "Username" id = "Username"/>
+       </div>
+       
+       <div class="input-field">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder = "Email" />
+       </div>
+       <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder = "Password"/>
+       </div>
+   
+    <input type="submit" class="btn solid" value ="Login" id = "signUp-button"/>
+    <p class="social-text">Or Sign Up with social platforms</p>
+      <div class="social-media">
+        <a href="#" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+              </a>
+      </div>
+      </form>
+      </div>
+    
+    
+     <div class = "panels-container">
+     <div class = "pannel left-panel">
+     <div class="content"> 
+     <h3>New here?</h3>
+     <p>The login and sign-up
+     
+     </p>
+     <button class="btn transparent"
+     id = "sign-up-button">Sign Up</button>
+    </div>
+    </div>
+    </div>
+  
+  <div class = "panels-container">
+<div class = "pannel right-panel">
+<div class="content"> 
+<h3>One of us?</h3>
+<p>
+  The login and sign-up
+</p>
+<button class="btn transparent"
+id = "sign-in-button">Sign In</button>
+</div>
+</div>
+</div>
+  
+
+      <script src="sketch.js"></script>
+
+      
+
+
+</body></html>
